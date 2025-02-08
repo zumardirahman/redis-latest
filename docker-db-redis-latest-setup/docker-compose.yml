@@ -5,7 +5,8 @@ services:
     restart: always
     networks:
       - zum_network
-
+    ports:
+      - "6379:6379"  
 networks:
   zum_network:
     driver: bridge
